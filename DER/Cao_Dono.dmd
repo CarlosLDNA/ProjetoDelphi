@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Cao_Dono" id="67FEDDD1-258B-CCA1-5EA8-89D451AAD92A" version="3.5">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:08:37 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>67FEDDD1-258B-CCA1-5EA8-89D451AAD92A</designId>
+</OSDM_Design>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/07/28 07:43:08.000.915,=D:\Projeto_Teste\Unit1.pas</Transaction>
+    <Transaction>2021/07/28 07:45:24.000.610,D:\Projeto_Teste\uPrincipal.pas=D:\Projeto_Teste\Unit1.pas</Transaction>
+    <Transaction>2021/07/28 07:45:24.000.610,D:\Projeto_Teste\uPrincipal.dfm=D:\Projeto_Teste\Unit1.dfm</Transaction>
+    <Transaction>2021/07/28 07:46:18.000.505,D:\Projeto_Teste\DogPeoples.dproj=D:\Projeto_Teste\Project1.dproj</Transaction>
+    <Transaction>2021/07/28 08:39:42.000.718,=D:\Projeto_Teste\Unit1.pas</Transaction>
+    <Transaction>2021/07/28 08:40:38.000.894,D:\Projeto_Teste\Unit1.pas=D:\Projeto_Teste\uPessoa.pas</Transaction>
+    <Transaction>2021/07/28 08:40:38.000.894,D:\Projeto_Teste\Unit1.dfm=D:\Projeto_Teste\uPessoa.dfm</Transaction>
+    <Transaction>2021/07/28 14:50:46.000.496,=D:\Projeto_Teste\Unit1.pas</Transaction>
+    <Transaction>2021/07/28 14:54:03.000.400,D:\Projeto_Teste\Unit1.dfm=D:\Projeto_Teste\uCao.dfm</Transaction>
+    <Transaction>2021/07/28 14:54:03.000.400,D:\Projeto_Teste\Unit1.pas=D:\Projeto_Teste\uCao.pas</Transaction>
+    <Transaction>2021/07/28 14:55:46.000.915,=D:\Projeto_Teste\Unit1.pas</Transaction>
+    <Transaction>2021/07/28 14:56:13.000.459,D:\Projeto_Teste\Unit1.dfm=D:\Projeto_Teste\uDmPrincipal.dfm</Transaction>
+    <Transaction>2021/07/28 14:56:13.000.459,D:\Projeto_Teste\Unit1.pas=D:\Projeto_Teste\uDmPrincipal.pas</Transaction>
+    <Transaction>2021/07/28 15:44:15.000.586,=D:\Projeto_Teste\Unit1.pas</Transaction>
+    <Transaction>2021/07/28 15:45:34.000.850,D:\Projeto_Teste\Unit1.dfm=D:\Projeto_Teste\uCaoDono.dfm</Transaction>
+    <Transaction>2021/07/28 15:45:34.000.850,D:\Projeto_Teste\Unit1.pas=D:\Projeto_Teste\uCaoDono.pas</Transaction>
+  </Transactions>
+</BorlandProject>

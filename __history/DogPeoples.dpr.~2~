@@ -1,0 +1,16 @@
+program DogPeoples;
+
+uses
+  Vcl.Forms,
+  uPrincipal in 'uPrincipal.pas' {frmPrincipal},
+  uPessoa in 'uPessoa.pas' {frmPessoa};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmPessoa, frmPessoa);
+  Application.Run;
+end.

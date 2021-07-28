@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9965496A-5409-6C91-D84D-0E3F086D8C50" name="cao_dono">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:15:03 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<abbreviation>cao_dono</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dono_idDono" id="F7C2DD06-C83E-89BE-2DB5-14E02485726D">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:15:41 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1B36E96-C701-D67E-B00B-8E87E85D6653" referredColumn="86659614-98EA-6D4E-8F49-921A6F85544D"/>
+</associations>
+</Column>
+<Column name="cao_idCao" id="C66CEEFF-9A74-7187-9196-B718F1090BCB">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:15:50 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F76270AF-8C7C-E25C-E2B8-1C32EDCC4103" referredColumn="A33ABBED-3FFD-4F40-04AC-C2D4108AD968"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F9437DA7-4DCD-DC48-1F6A-DE56D3DE9DA5" name="cao_dono_PK">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:16:07 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7C2DD06-C83E-89BE-2DB5-14E02485726D"/>
+<colUsage columnID="C66CEEFF-9A74-7187-9196-B718F1090BCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61696F88-A2F5-79A5-7691-79CB8A283BBC" name="cao_dono_dono_FK">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:15:41 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7C2DD06-C83E-89BE-2DB5-14E02485726D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F450BB31-32F2-382D-08DC-39B5E1E654C1" name="cao_dono_cao_FK">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:15:50 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C66CEEFF-9A74-7187-9196-B718F1090BCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

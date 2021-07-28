@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC0AED81-A100-D84F-E0D4-00B95DBEC046" name="cao">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:11:41 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<abbreviation>cao</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idCao" id="A33ABBED-3FFD-4F40-04AC-C2D4108AD968">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:12:47 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="60093F31-6735-7046-0080-DF2BA4238077">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:12:47 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="raca" id="F3524D34-E1CD-BC30-0C62-A8BD581C22C0">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:13:03 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4ED55A63-1D9E-6081-29A5-5C98CF576ADF" name="cao_PK">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:14:55 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A33ABBED-3FFD-4F40-04AC-C2D4108AD968"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

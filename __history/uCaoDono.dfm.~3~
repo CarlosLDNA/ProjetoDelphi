@@ -1,0 +1,47 @@
+object frmCaoDono: TfrmCaoDono
+  Left = 0
+  Top = 0
+  Caption = 'Cadastrar C'#227'o ao Dono'
+  ClientHeight = 424
+  ClientWidth = 897
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object FDQuery1: TFDQuery
+    Connection = dmPrincipal.Connection
+    Left = 600
+    Top = 16
+  end
+  object FDQuery2: TFDQuery
+    Connection = dmPrincipal.Connection
+    Left = 680
+    Top = 16
+  end
+  object FDQuery3: TFDQuery
+    Connection = dmPrincipal.Connection
+    Left = 760
+    Top = 16
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 592
+    Top = 80
+  end
+  object DataSource2: TDataSource
+    DataSet = FDQuery2
+    Left = 672
+    Top = 80
+  end
+  object DataSource3: TDataSource
+    DataSet = FDQuery3
+    Left = 760
+    Top = 80
+  end
+end

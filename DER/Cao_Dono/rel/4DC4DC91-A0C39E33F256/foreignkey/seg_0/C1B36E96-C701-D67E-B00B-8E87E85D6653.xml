@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1B36E96-C701-D67E-B00B-8E87E85D6653" containerWithKeyObject="9965496A-5409-6C91-D84D-0E3F086D8C50" localFKIndex="61696F88-A2F5-79A5-7691-79CB8A283BBC" name="cao_dono_dono_FK">
+<createdBy>Beto</createdBy>
+<createdTime>2021-07-28 11:15:41 UTC</createdTime>
+<ownerDesignName>Cao_Dono</ownerDesignName>
+<referredTableLongName>dono</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A821881C-4CD7-4BE2-6887-A748A04AE7AC</referredTableID>
+<keyObject>CD8FE495-3E0D-024D-777D-D6B098CDE78C</keyObject>
+<referredKeyID>CD8FE495-3E0D-024D-777D-D6B098CDE78C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idDono</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

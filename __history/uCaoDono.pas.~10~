@@ -1,0 +1,85 @@
+unit uCaoDono;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, udmPrincipal, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.StdCtrls,
+  Vcl.ExtCtrls, Vcl.Grids, Vcl.DBGrids;
+
+type
+  TfrmCaoDono = class(TForm)
+    tbPessoa: TFDQuery;
+    tbCao: TFDQuery;
+    tbCaoDono: TFDQuery;
+    dsPessoa: TDataSource;
+    dsCao: TDataSource;
+    dsCaoDono: TDataSource;
+    dbgPessoa: TDBGrid;
+    dbgCao: TDBGrid;
+    Panel1: TPanel;
+    dbgCaoDono: TDBGrid;
+    btnIncluir: TButton;
+    btnFechar: TButton;
+    procedure btnFecharClick(Sender: TObject);
+    procedure btnIncluirClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCaoDono: TfrmCaoDono;
+
+const
+
+  SQL_INSERE_CAO_DONO = 'INSERT INTO CAO_PESSOA (IDDONO, IDCAO) VALUES (%S, %S)';
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCaoDono.btnFecharClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfrmCaoDono.btnIncluirClick(Sender: TObject);
+var
+  QryCaoDono: TFDQuery;
+begin
+  QryCaoDono := TFDQuery.Create(nil);
+  try
+    if not(dmPrincipal.Connection.InTransaction) then
+      dmPrincipal.Connection.StartTransaction;
+    try
+      QryCaoDono.Connection := dmPrincipal.Connection;
+      QryCaoDono.ExecSQL(Format(SQL_INSERE_CAO_DONO, [dbgPessoa.Columns.Items[0].Field.AsString, dbgCao.Columns.Items[0].Field.AsString]));
+      dmPrincipal.Connection.Commit;
+    except
+      on E:Exception do
+      begin
+        Showmessage('Ocorreu um erro de banco de dados! '+'Erro ao inserir registro '+#13+
+        'Detalhe: '+E.Message);
+        dmPrincipal.Connection.Rollback;
+        Exit;
+      end;
+    end;
+  finally
+    FreeAndNil(QryCaoDono);
+    tbPessoa.ApplyUpdates(0);
+    tbPessoa.Close;
+    tbPessoa.Open;
+    tbPessoa.Refresh;
+  end;
+end;
+
+
+end.
+
+
+
