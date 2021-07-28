@@ -39,7 +39,6 @@ object frmPrincipal: TfrmPrincipal
       item
         Width = 50
       end>
-    ExplicitWidth = 784
   end
   object mmPrincipal: TMainMenu
     Left = 24
@@ -62,6 +61,10 @@ object frmPrincipal: TfrmPrincipal
         Caption = 'C'#227'es e seus Donos'
         Hint = 'Cadastrar C'#227'es e seus Donos'
         OnClick = CaesDonosClick
+      end
+      object Relatrio1: TMenuItem
+        Caption = 'Relat'#243'rio'
+        OnClick = Relatrio1Click
       end
       object N41: TMenuItem
         Caption = '-'

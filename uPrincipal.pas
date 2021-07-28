@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls, Vcl.ComCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls, Vcl.ComCtrls,
+  Vcl.StdCtrls;
 
 type
   TfrmPrincipal = class(TForm)
@@ -18,12 +19,14 @@ type
     StatusBar1: TStatusBar;
     tStatus: TTimer;
     tStatusDataHora: TTimer;
+    Relatrio1: TMenuItem;
     procedure Sair1Click(Sender: TObject);
     procedure tStatusTimer(Sender: TObject);
     procedure tStatusDataHoraTimer(Sender: TObject);
     procedure PessoaClick(Sender: TObject);
     procedure CaesClick(Sender: TObject);
     procedure CaesDonosClick(Sender: TObject);
+    procedure Relatrio1Click(Sender: TObject);
   private
     { Private declarations }
     procedure CheckCapsLock;
@@ -45,7 +48,7 @@ implementation
 {$R *.dfm}
 
 Uses
-  uPessoa, uCao, uCaoDono;
+  uPessoa, uCao, uCaoDono, uFiltroRaca;
 
 procedure TfrmPrincipal.CaesClick(Sender: TObject);
 begin
@@ -84,6 +87,11 @@ end;
 procedure TfrmPrincipal.PessoaClick(Sender: TObject);
 begin
   frmPessoa.ShowModal;
+end;
+
+procedure TfrmPrincipal.Relatrio1Click(Sender: TObject);
+begin
+  frmFiltroRaca.ShowModal;
 end;
 
 procedure TfrmPrincipal.Sair1Click(Sender: TObject);
